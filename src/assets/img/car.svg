@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill-rule="nonzero" height="96px" viewBox="0,0,256,256" width="96px">
+  <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+    <g transform="scale(5.33333,5.33333)">
+      <rect fill="#744bd1" height="4" width="48" x="0" y="21"/>
+      <rect fill="#3400aa" height="4" width="8" x="3" y="37"/>
+      <rect fill="#3400aa" height="4" width="8" x="37" y="37"/>
+      <path d="M42,21h-36l5.553,-14h24.894z" fill="#d1c2f3"/>
+      <rect fill="#744bd1" height="15" width="42" x="3" y="22"/>
+      <rect fill="#4b0ed6" height="2" width="8" x="3" y="35"/>
+      <rect fill="#4b0ed6" height="2" width="8" x="37" y="35"/>
+      <rect fill="#4b0ed6" height="4" width="8" x="3" y="27"/>
+      <rect fill="#4b0ed6" height="4" width="18" x="15" y="27"/>
+      <rect fill="#4b0ed6" height="4" width="8" x="37" y="27"/>
+    </g>
+  </g>
+</svg>
