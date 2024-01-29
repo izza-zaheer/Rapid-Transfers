@@ -8,7 +8,7 @@ const bgImage =
 </script>
 <template>
   <header>
-    <nav
+    <!-- <nav
       class="navbar navbar-expand-lg navbar-dark navbar-absolute bg-transparent shadow-none"
     >
       <div class="container">
@@ -71,7 +71,7 @@ const bgImage =
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>-->
     <div
       class="page-header min-vh-100"
       :style="{
@@ -82,21 +82,16 @@ const bgImage =
       <span class="mask bg-gradient-dark opacity-5"></span>
       <div class="container">
         <div class="row">
-          <div
-            class="col-lg-6 col-md-7 d-flex justify-content-center flex-column"
-          >
-            <h1 class="text-white mb-4">Material Kit</h1>
-            <p class="text-white opacity-8 lead pe-5 me-5">
-              The time is now for it be okay to be great. People in this world
-              shun people for being nice.
+          <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+            <h1 class="text-white mb-4">What we Serve.</h1>
+            <p class="text-white opacity-12 lead pe-1 me-1">
+              At Rapid Transfers, we specialize in taking you places, whether it's from city to city, airport to city, or any point of interest within a city.
+              Our drivers are carefully selected to make your long-distance trips as enjoyable as possible, and our 24/7 travel agents are always available, so you don't have to wait.
+              Book in advance and enjoy the ride. The best part? The price is all-inclusive, so you won't get hit with any extra fees or hidden costs.
             </p>
             <div class="buttons">
-              <MaterialButton color="white" class="mt-4"
-                >Get Started</MaterialButton
-              >
-              <MaterialButton color="none" class="text-white shadow-none mt-4"
-                >Read more</MaterialButton
-              >
+              <MaterialButton color="white" class="mt-4">Get Started</MaterialButton>
+              <MaterialButton color="none" class="text-white shadow-none mt-4">Read more</MaterialButton>
             </div>
           </div>
         </div>

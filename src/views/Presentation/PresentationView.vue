@@ -13,6 +13,7 @@ import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
 
 // sections
 import PresentationCounter from "./Sections/PresentationCounter.vue";
+import PresentationAccordion from "./Sections/Accordion.vue";
 import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
@@ -84,7 +85,7 @@ onUnmounted(() => {
     <PresentationInformation />
     <!-- <PresentationExample :data="data" /> -->
     <!-- <PresentationPages />
-    <BuiltByDevelopers /> -->
+    <BuiltByDevelopers />-->
 
     <!-- <div class="container">
       <div class="row">
@@ -133,7 +134,7 @@ onUnmounted(() => {
         </div>
       </div>
     </div>
-    <PresentationTestimonials /> -->
+    <PresentationTestimonials />-->
 
     <div
       class="container-fluid mt-sm-5 border-radius-xl"
@@ -153,12 +154,12 @@ onUnmounted(() => {
           <div class="row">
             <div class="d-flex justify-content-center p-5">
               <div class="col-lg-8 ms-lg-5 text-center">
-
                 <h3 class="text-white">Transfer from Barcelona to Anywhere in Spain</h3>
                 <p class="text-white text-md">
-                  <b> Book it now or later with Rapid Transfers.
-                  <br />Your Satisfaction matters to us.
-                </b>
+                  <b>
+                    Book it now or later with Rapid Transfers.
+                    <br />Your Satisfaction matters to us.
+                  </b>
                 </p>
 
                 <a
@@ -233,7 +234,7 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-    </div> -->
+    </div>-->
     <!-- <div class="py-5">
       <div class="container">
         <div class="row">
@@ -258,7 +259,10 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-    </div> -->
+    </div>-->
+    <br><br>
+    <PresentationAccordion />
   </div>
+
   <DefaultFooter />
 </template>

@@ -103,7 +103,8 @@ const highlighter = (code) => {
                   role="tab"
                   aria-selected="true"
                 >
-                  <i class="fas fa-desktop text-sm me-2"></i> Preview
+                  <!-- <i class="fas fa-desktop text-sm me-2"></i> Preview -->
+                  Our Service
                 </a>
               </li>
               <li class="nav-item">
@@ -114,7 +115,8 @@ const highlighter = (code) => {
                   role="tab"
                   aria-selected="false"
                 >
-                  <i class="fas fa-code text-sm me-2"></i> Code
+                  <!-- <i class="fas fa-code text-sm me-2"></i> Code -->
+                  Barcelona
                 </a>
               </li>
             </ul>
