@@ -70,10 +70,11 @@ onUnmounted(() => {
               Book a Taxi in Barcelona
               <br />Airport transfers or city-to-city in Barcelona startings from 50€
             </p>
+            <RouterLink :to="{ name: 'contactus' }" >
             <a
               :style="{ fontWeight: '800' }"
               class="btn btn-sm mb-0 bg-gradient-success px-5 py-3 mt-4"
-            >Book a ride →</a>
+            >Book a ride →</a></RouterLink>
           </div>
         </div>
       </div>

@@ -12,12 +12,28 @@ import image from "@/assets/img/examples/blog2.jpg";
 import MaterialInput from "@/components/MaterialInput.vue";
 import MaterialTextArea from "@/components/MaterialTextArea.vue";
 import MaterialButton from "@/components/MaterialButton.vue";
-
+// Import SweetAlert
+import Swal from 'sweetalert2';
 // material-input
 import setMaterialInput from "@/assets/js/material-input";
+import  router  from "../../../router/index";
 onMounted(() => {
   setMaterialInput();
 });
+// Define a method
+const onConfirm = () => {
+  console.log("hi");
+  Swal.fire({
+    title: 'Confirmed!',
+    text: "We've received your application. For Confirmation we will call you within few Hours. \n For Urgency Please contact on this No: +34 678 67 6 76",
+    icon: 'success',
+    confirmButtonColor: '#43a047',
+    preConfirm: () => {
+      router.push("/")
+}
+   
+  });
+};
 </script>
 <template>
   <div class="container position-sticky z-index-sticky top-0">
@@ -26,9 +42,9 @@ onMounted(() => {
         <DefaultNavbar
           :sticky="true"
           :action="{
-            route: 'https://www.creative-tim.com/product/vue-material-kit-pro',
+            route: '/pages/landing-pages/contact-us',
             color: 'bg-gradient-success',
-            label: 'Buy Now',
+            label: 'Book a Ride',
           }"
         />
       </div>
@@ -150,8 +166,9 @@ onMounted(() => {
                         <MaterialButton
                           variant="gradient"
                           color="success"
-                          type="submit"
+                          type="button"
                           class="mt-3 mb-0"
+                          @click="onConfirm"
                           >Confirm</MaterialButton
                         >
                       </div>
@@ -167,3 +184,11 @@ onMounted(() => {
   </section>
   <DefaultFooter />
 </template>
+<style scoped>
+.swal-confirm-button {
+  background-color: #177948 !important; /* Change this to your desired background color */
+  color: #ffffff; /* Change this to your desired text color */
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  /* Add any other styles you want to customize */
+}
+</style>

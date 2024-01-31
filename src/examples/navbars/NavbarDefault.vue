@@ -15,7 +15,7 @@ const props = defineProps({
     color: String,
     label: String,
     default: () => ({
-      route: "https://www.creative-tim.com/product/vue-material-kit",
+      route: "pages/landing-pages/contact-us",
       color: "bg-gradient-success",
       label: "Book a Ride",
     }),
@@ -117,7 +117,7 @@ watch(
         ]"
         :to="{ name: 'presentation' }"
         rel="tooltip"
-        title="Designed and Coded by Creative Tim"
+        title="Rapid Transfers"
         data-placement="bottom"
       >Rapid Transfers</RouterLink>
       <RouterLink
@@ -129,13 +129,12 @@ watch(
         "
         to="/"
         rel="tooltip"
-        title="Designed and Coded by Creative Tim"
+        title="Rapid Transfers"
         data-placement="bottom"
       >Rapid Transfers</RouterLink>
       <a
-        href="https://www.creative-tim.com/product/vue-material-kit-pro"
         class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block"
-      >Book a Ride</a>
+      >Book a Ridee</a>
       <button
         class="navbar-toggler shadow-none ms-2"
         type="button"

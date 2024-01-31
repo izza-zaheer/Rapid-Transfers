@@ -6,6 +6,9 @@ import router from "./router";
 // Nucleo Icons
 import "./assets/css/nucleo-icons.css";
 import "./assets/css/nucleo-svg.css";
+// Import SweetAlert CSS for styling (optional)
+import 'sweetalert2/dist/sweetalert2.min.css';
+
 
 import materialKit from "./material-kit";
 
