@@ -40,6 +40,14 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  Min: {
+    type: Date || Number,
+    default: false,
+  },
+  Max: {
+    type: Number || Boolean,
+    default: false,
+  },
   isDisabled: {
     type: Boolean,
     default: false,
@@ -83,6 +91,8 @@ function getClasses(size, success, error) {
       class="form-control"
       :class="[getClasses(size, success, error), inputClass]"
       v-model="value"
+      :min="Min"
+      :max="Max"
       :placeholder="placeholder"
       :required="isRequired"
       :disabled="isDisabled"

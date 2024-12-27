@@ -16,6 +16,28 @@ import "bootstrap/dist/css/bootstrap.min.css";
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              ><b>How far in advance should I make my reservation?</b></button>
+            </h2>
+            <div
+              id="flush-collapse"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body"
+              >You can make your reservation up to 3 hours before your trip. However, it's better to book a few days in advance to make sure that your reservation is available and will be taken care of. If no drivers are available in the pick-up zone, your trip is immediately cancelled and 100% refunded.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne"
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"

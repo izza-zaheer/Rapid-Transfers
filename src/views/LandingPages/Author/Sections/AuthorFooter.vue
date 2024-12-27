@@ -37,7 +37,7 @@
           </ul>
           <p class="text-sm text-dark opacity-8 mb-0">
             Copyright © {{ new Date().getFullYear() }} Design by
-            Izza Zaheer
+            Zey Techs
           </p>
         </div>
         <div class="col-lg-6 ms-auto text-lg-end text-center">

@@ -4,7 +4,6 @@ import { onMounted, ref } from "vue";
 import MaterialButton from "@/components/MaterialButton.vue";
 import MaterialInput from "@/components/MaterialInput.vue";
 import MaterialTextArea from "@/components/MaterialTextArea.vue";
-import axios from "axios";
 
 // image
 import bgContact from "@/assets/img/examples/blog2.jpg";
@@ -34,21 +33,20 @@ const isFormDataValid = (formData) => {
   );
 };
 const saveName = async (val) => {
-  formData.name = val;
+  formData.value.name = val;
 };
 const saveEmail = async (val) => {
-  formData.email = val;
+  formData.value.email = val;
 };
 const saveMobileNo = async (val) => {
-  formData.mobileNo = val;
+  formData.value.mobileNo = val;
 };
 const saveMsg = async (val) => {
-  formData.msg = val;
+  formData.value.msg = val;
 };
 // Define the submit method
 
 const submitForm = async () => {
-  debugger;
   console.log(formData);
   let validation = !isFormDataValid(formData.value);
   if (validation) {
@@ -86,7 +84,9 @@ const submitForm = async () => {
                   class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center"
                 >
                   <div class="mask bg-gradient-dark opacity-8"></div>
-                  <div class="p-5 ps-sm-8 position-relative text-start my-auto z-index-2">
+                  <div
+                    class="p-5 ps-sm-8 position-relative text-start my-auto z-index-2"
+                  >
                     <h3 class="text-white">Contact Information</h3>
                     <p class="text-white opacity-8 mb-4">
                       Fill up the form and our Team will get back to you within
@@ -97,7 +97,9 @@ const submitForm = async () => {
                         <i class="fas fa-phone text-sm"></i>
                       </div>
                       <div class="ps-3">
-                        <span class="text-sm opacity-8">(+34) 661 16 03 02</span>
+                        <span class="text-sm opacity-8"
+                          >(+34) 661 16 03 02</span
+                        >
                       </div>
                     </div>
                     <div class="d-flex p-2 text-white">
@@ -105,7 +107,9 @@ const submitForm = async () => {
                         <i class="fas fa-envelope text-sm"></i>
                       </div>
                       <div class="ps-3">
-                        <span class="text-sm opacity-8">rapidtransfers886@gmail.com</span>
+                        <span class="text-sm opacity-8"
+                          >rapidtransfers886@gmail.com</span
+                        >
                       </div>
                     </div>
                     <div class="d-flex p-2 text-white">
@@ -205,7 +209,8 @@ const submitForm = async () => {
                           placeholder="I want to say that..."
                           :rows="6"
                           @blur="saveMsg"
-                        >Your message</MaterialTextArea>
+                          >Your message</MaterialTextArea
+                        >
                       </div>
                     </div>
                     <div class="row">
@@ -216,7 +221,8 @@ const submitForm = async () => {
                           type="submit"
                           class="mb-0"
                           @submit.prevent="submitForm"
-                        >Send Message</MaterialButton>
+                          >Send Message</MaterialButton
+                        >
                       </div>
                     </div>
                   </div>

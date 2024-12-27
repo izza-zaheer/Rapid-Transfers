@@ -3,7 +3,7 @@ import { onMounted } from "vue";
 
 //Vue Material Kit 2 components
 import MaterialAvatar from "@/components/MaterialAvatar.vue";
-import MaterialButton from "@/components/MaterialButton.vue";
+// import MaterialButton from "@/components/MaterialButton.vue";
 
 // image
 import profilePic from "@/assets/img/bruce-mars.jpg";
